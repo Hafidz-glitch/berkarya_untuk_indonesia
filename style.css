@@ -333,3 +333,129 @@ body {
     margin-top: 4px;
     color: #cbd5e1;
 }
+
+/* ==========================================================================
+   6. RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================================== */
+
+/* --- A. TABLET & IPAD VIEW (Maksimal Lebar 992px) --- */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem; /* Mengecilkan judul agar tidak memakan ruang */
+    }
+
+    .about-container {
+        gap: 40px;
+    }
+}
+
+/* --- B. SMARTPHONE VIEW (Maksimal Lebar 768px) --- */
+@media (max-width: 768px) {
+    /* 1. Navbar Mobile Adjustment */
+    .nav-container {
+        padding: 0 16px;
+    }
+
+    .nav-links {
+        gap: 16px; /* Merapatkan menu navbar di HP */
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .btn-nav {
+        padding: 6px 12px;
+    }
+
+    /* 2. Hero Section Mobile Adjustment */
+    .hero-section {
+        padding-top: 130px;
+        padding-bottom: 70px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-title {
+        font-size: 2rem; /* Ukuran teks ideal untuk layar HP */
+    }
+
+    .hero-desc {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Tombol jadi bertumpuk vertikal di HP */
+        gap: 12px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 3. Tentang Program Mobile Adjustment */
+    .about-section {
+        padding: 60px 16px;
+    }
+
+    .about-container {
+        flex-direction: column; /* Mengubah susunan menyamping menjadi bertumpuk ke bawah */
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .about-features li {
+        justify-content: center;
+        text-align: left; /* Teks poin penjelasan tetap rapi rata kiri */
+    }
+
+    .visual-card {
+        height: 280px; /* Mengecilkan box visual agar pas di layar HP */
+    }
+
+    /* 4. Call To Action (CTA) Mobile Adjustment */
+    .cta-section {
+        padding: 60px 16px;
+    }
+
+    .cta-container {
+        padding: 40px 20px;
+        border-radius: 16px;
+    }
+
+    .cta-title {
+        font-size: 1.75rem;
+    }
+
+    .cta-desc {
+        font-size: 0.95rem;
+    }
+
+    .btn-cta {
+        width: 100%; /* Tombol CTA memanjang penuh di HP agar mudah di-tap jempol */
+        padding: 12px 24px;
+    }
+}
+
+/* --- C. SMALL PHONE VIEW (Maksimal Lebar 480px) --- */
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+}
